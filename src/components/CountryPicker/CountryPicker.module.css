@@ -2,3 +2,10 @@
     width: 30%;
     margin-bottom: 30px !important;
 }
+
+.formControl:hover {
+    
+    /* transform: scale(1.08); */
+    transform: scaleX(1.1) scaleY(1.07);
+    transition: transform 0.5s;
+}

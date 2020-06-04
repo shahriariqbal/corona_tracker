@@ -1,28 +1,78 @@
-.container{
-    margin: 50px 0;
+.container {
+	margin: 50px 0;
 }
 
-.card{
-    border: 5px solid rgba(144, 21, 216, 0.5);
-    padding: 10px;
-    box-shadow: 5px 10px #888888;
+.card {
+	border-radius: 20px !important;
+	text-align: center;
+	margin: 0 2% !important;
+}
 
+.heading_infected {
+	font-weight: bolder !important;
+	font-size: 27px !important;
+	color: rgba(144, 21, 216) !important;
+}
 
-    margin: 0 2% !important;
+.infected_num {
+	font-weight: bold;
+	font-style: italic;
+	color: rgba(144, 21, 216);
+}
+
+.heading_recovered {
+	font-weight: bolder !important;
+	font-size: 27px !important;
+	color: rgb(23, 143, 23) !important;
+}
+.recovered_num {
+	font-weight: bold;
+	font-style: italic;
+	color: rgb(23, 143, 23);
+}
+
+.heading_deaths {
+	font-weight: bolder !important;
+	font-size: 27px !important;
+	color: rgba(255, 0, 0) !important;
+}
+.deaths_num {
+	font-weight: bold;
+	font-style: italic;
+	color: rgba(255, 0, 0);
 }
 
 .infected {
-    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+	border: 2px solid rgba(144, 21, 216);
+	box-shadow: 5px 10px rgba(144, 21, 216) !important;
 }
+
 .recovered {
-    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+	border: 2px solid rgb(23, 143, 23);
+	box-shadow: 5px 10px rgb(23, 143, 23) !important;
 }
 .deaths {
-    border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+	border: 2px solid rgba(255, 0, 0);
+	box-shadow: 5px 10px rgba(255, 0, 0) !important;
+}
+
+.infected:hover,
+.recovered:hover,
+.deaths:hover {
+	transform: scale(1.08);
+
+	transition: transform 0.5s;
+}
+
+/* by me */
+@media (max-width: 960px) {
+	.card {
+		margin: 2% 10% !important;
+	}
 }
 
 @media (max-width: 770px) {
-    .card {
-        margin: 2% 0 !important;
-    }
+	.card {
+		margin: 3% 0 !important;
+	}
 }
